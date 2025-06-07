@@ -1,36 +1,33 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import {
-  FaShoppingCart,
-  FaUser,
-  FaBoxOpen,
-  FaTags,
-  FaHeart,
-} from "react-icons/fa";
+import { FaShoppingCart, FaUser, FaTags, FaBoxOpen } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
-function Header() {
+function App() {
   return (
     <header>
-      <Navbar bg="danger" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar bg="danger " variant="dark" expand="lg" collapseOnSelect>
         <Container>
-          <Navbar.Brand href="/"> ProShop</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img src={logo} alt="ProShop" />
+            ProShop
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id=" basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="/cart">
-                <FaShoppingCart className="me-1" /> Cart
+                <FaShoppingCart /> Cart
               </Nav.Link>
               <Nav.Link href="/login">
-                <FaUser className="me-1" /> Sign In
+                <FaUser />
+                Login
               </Nav.Link>
-              <Nav.Link href="/order">
-                <FaBoxOpen />
-                Orders
+              <Nav.Link href="/discounts">
+                <FaTags />
+                Discounts
               </Nav.Link>
               <Nav.Link href="/wishlist">
-                <FaHeart /> wishlist
-              </Nav.Link>
-              <Nav.Link href="/discount">
-                <FaTags /> Discount/Deals
+                <FaBoxOpen />
+                orders
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -40,4 +37,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default App;
