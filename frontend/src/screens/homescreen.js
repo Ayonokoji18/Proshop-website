@@ -3,7 +3,7 @@ import ProductCard from "../components/productcard.js";
 
 function HomeScreen() {
   return (
-    <div className="container mt-4">
+    <div className="container mt-5">
       <div className="row">
         {products.map((product) => (
           <ProductCard key={product._id} product={product}></ProductCard>
