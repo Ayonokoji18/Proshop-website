@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
-import HomeScreen from "./screens/homescreen.js";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <main className="py-3">
         <Container>
-          <HomeScreen />
+          <Outlet />
         </Container>
       </main>
       <Footer />

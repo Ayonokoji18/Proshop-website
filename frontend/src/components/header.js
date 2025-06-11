@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 import {
   FaBoxOpen,
   FaTags,
@@ -13,32 +14,44 @@ function Header() {
     <header>
       <Navbar bg="success" variant="dark" collapseOnSelect expand="md">
         <Container>
-          <Navbar.Brand href="/">
-            <img src={logo} alt="proshop" />
-            ProShop
-          </Navbar.Brand>
+          <LinkContainer to="/">
+            <Navbar.Brand>
+              <img src={logo} alt="proshop" />
+              ProShop
+            </Navbar.Brand>
+          </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/box">
-                <FaBoxOpen />
-                Box
-              </Nav.Link>
-              <Nav.Link href="/discount">
-                <FaTags />
-                Discount
-              </Nav.Link>
-              <Nav.Link href="/login">
-                <FaUser />
-                Login
-              </Nav.Link>
-              <Nav.Link href="/calculate">
-                <FaCalculator />
-                Calculator
-              </Nav.Link>
-              <Nav.Link href="/yahoo">
-                <FaYahoo /> Yahoo
-              </Nav.Link>
+              <LinkContainer to="/box">
+                <Nav.Link>
+                  <FaBoxOpen />
+                  Box
+                </Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/discount">
+                <Nav.Link>
+                  <FaTags />
+                  Discount
+                </Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/login">
+                <Nav.Link>
+                  <FaUser />
+                  Login
+                </Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/calculate">
+                <Nav.Link>
+                  <FaCalculator />
+                  Calculator
+                </Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/yahoo">
+                <Nav.Link href="/yahoo">
+                  <FaYahoo /> Yahoo
+                </Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
