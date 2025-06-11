@@ -48,7 +48,7 @@ function Header() {
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/yahoo">
-                <Nav.Link href="/yahoo">
+                <Nav.Link>
                   <FaYahoo /> Yahoo
                 </Nav.Link>
               </LinkContainer>

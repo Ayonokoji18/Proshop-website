@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Rating from "../components/rating.js";
 
 function ProductCard({ product }) {
   return (
@@ -14,7 +15,13 @@ function ProductCard({ product }) {
         <div className="card-body d-flex flex-column">
           <h5> {product.name}</h5>
           <p>
-            {product.price} | <span>Rating:{product.rating}</span>
+            {product.price} |{" "}
+            <span>
+              <Rating
+                value={product.rating}
+                text={`${product.numReviews} reviews`}
+              ></Rating>
+            </span>
           </p>
           <Link
             to={`product/${product._id}`}
