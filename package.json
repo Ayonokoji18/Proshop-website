@@ -1,0 +1,30 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Ayonokoji18/Proshop-website#readme",
+  "bugs": {
+    "url": "https://github.com/Ayonokoji18/Proshop-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayonokoji18/Proshop-website.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "node backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10"
+  }
+}

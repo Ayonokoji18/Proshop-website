@@ -6,7 +6,7 @@ function HomeScreen() {
     <div className="container mt-5">
       <div className="row">
         {products.map((product) => (
-          <ProductCard key={product._id} product={product}></ProductCard>
+          <ProductCard key={product._id} product={product} />
         ))}
       </div>
     </div>

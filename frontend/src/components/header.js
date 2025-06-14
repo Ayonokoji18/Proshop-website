@@ -1,22 +1,16 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
-import {
-  FaBoxOpen,
-  FaTags,
-  FaUser,
-  FaCalculator,
-  FaYahoo,
-} from "react-icons/fa";
+import { FaBoxOpen, FaOpencart, FaTags, FaUser, FaYahoo } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import { LinkContainer } from "react-router-bootstrap";
 
 function Header() {
   return (
     <header>
-      <Navbar bg="success" variant="dark" collapseOnSelect expand="md">
+      <Navbar bg="success" variant="light" collapseOnSelect expand="md">
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img src={logo} alt="proshop" />
+              <img src={logo} alt="ProShop" />
               ProShop
             </Navbar.Brand>
           </LinkContainer>
@@ -25,31 +19,29 @@ function Header() {
             <Nav className="ms-auto">
               <LinkContainer to="/box">
                 <Nav.Link>
-                  <FaBoxOpen />
-                  Box
+                  <FaBoxOpen className="me-1" /> Box
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/discount">
+              <LinkContainer to="/cart">
                 <Nav.Link>
-                  <FaTags />
-                  Discount
+                  <FaOpencart className="me-1" />
+                  Cart
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/login">
                 <Nav.Link>
-                  <FaUser />
-                  Login
-                </Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/calculate">
-                <Nav.Link>
-                  <FaCalculator />
-                  Calculator
+                  <FaUser className="me-1" /> User
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/yahoo">
                 <Nav.Link>
-                  <FaYahoo /> Yahoo
+                  <FaYahoo className="me-1" /> Yahoo
+                </Nav.Link>
+              </LinkContainer>
+
+              <LinkContainer to="/tags">
+                <Nav.Link>
+                  <FaTags className="me-1" /> Tags
                 </Nav.Link>
               </LinkContainer>
             </Nav>

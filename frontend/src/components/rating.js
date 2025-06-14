@@ -13,6 +13,15 @@ function Rating({ value, text }) {
         )}
       </span>
       <span>
+        {value >= 1 ? (
+          <FaStar />
+        ) : value >= 0.5 ? (
+          <FaStarHalfAlt />
+        ) : (
+          <FaRegStar />
+        )}
+      </span>
+      <span>
         {value >= 2 ? (
           <FaStar />
         ) : value >= 1.5 ? (
@@ -48,7 +57,6 @@ function Rating({ value, text }) {
           <FaRegStar />
         )}
       </span>
-      <span> {text && text} </span>
     </div>
   );
 }
