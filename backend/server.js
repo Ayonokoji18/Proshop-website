@@ -1,21 +1,19 @@
 import express from "express";
-import products from "../backend/data/products.js";
 import morgan from "morgan";
-import dotenv from "dotenv";
 import cors from "cors";
+import dotenv from "dotenv";
+import products from "../backend/data/products.js";
+
 dotenv.config();
-
 const port = process.env.PORT || 5000;
-
 const app = express();
-
+app.use(express.json());
 app.use(cors());
-
 app.use(morgan("dev"));
+
 app.get("/", (req, res) => {
   res.send("Api is running");
 });
-
 app.get("/api/products", (req, res) => {
   res.json(products);
 });
@@ -25,8 +23,10 @@ app.get("/api/products/:id", (req, res) => {
   if (product) {
     res.json(product);
   } else {
-    res.status(404).json({ message: "product not found" });
+    res.status(404).json({ message: "Product not Found" });
   }
 });
 
-app.listen(port, () => console.log(`Server is runing on port ${port}`));
+app.listen(port, (req, res) => {
+  console.log(`Server is running on ${port}`);
+});
