@@ -1,10 +1,12 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
+import connectDB from "../backend/data/config/db.js";
 import dotenv from "dotenv";
 import products from "../backend/data/products.js";
 
 dotenv.config();
+connectDB();
 const port = process.env.PORT || 5000;
 const app = express();
 app.use(express.json());
