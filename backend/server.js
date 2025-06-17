@@ -1,7 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import connectDB from "../backend/data/config/db.js";
+import connectDB from "../backend/config/db.js";
 import dotenv from "dotenv";
 import products from "../backend/data/products.js";
 

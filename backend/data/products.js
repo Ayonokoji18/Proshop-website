@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Airpods Wireless Bluetooth Headphones",
     image: "/images/airpods.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "iPhone 11 Pro 256GB Memory",
     image: "/images/phone.jpg",
     description: "Triple-camera system, long battery life, and sleek design.",
@@ -25,7 +23,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Canon EOS 80D DSLR Camera",
     image: "/images/camera.jpg",
     description:
@@ -38,7 +35,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Sony Playstation 4 Pro White Version",
     image: "/images/playstation.jpg",
     description: "Immersive 4K gaming and entertainment hub.",
@@ -50,7 +46,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Logitech G-Series Gaming Mouse",
     image: "/images/mouse.jpg",
     description: "6 programmable buttons, high DPI, and RGB lighting.",
@@ -62,7 +57,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "Amazon Echo Dot 3rd Generation",
     image: "/images/alexa.jpg",
     description: "Compact smart speaker with Alexa and improved audio.",
@@ -74,7 +68,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "7",
     name: "Samsung Galaxy S22 Ultra 512GB",
     image: "/images/galaxy.jpg",
     description: "Flagship smartphone with built-in S Pen and great camera.",
@@ -86,7 +79,6 @@ const products = [
     numReviews: 25,
   },
   {
-    _id: "8",
     name: "Dell XPS 13 Laptop",
     image: "/images/dellxps.jpg",
     description: "Ultra-slim laptop with powerful performance and display.",
@@ -98,7 +90,6 @@ const products = [
     numReviews: 18,
   },
   {
-    _id: "9",
     name: "Apple MacBook Pro 16-inch",
     image: "/images/macbook.jpg",
     description: "M2 chip, Retina display, and extended battery life.",
@@ -110,7 +101,6 @@ const products = [
     numReviews: 30,
   },
   {
-    _id: "10",
     name: "HP Envy 6055e All-in-One Printer",
     image: "/images/printer.jpg",
     description: "Print, scan, and copy with wireless and mobile printing.",
@@ -122,7 +112,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "11",
     name: "Bose QuietComfort 45 Headphones",
     image: "/images/bose.jpg",
     description: "Noise-cancelling over-ear headphones with long battery life.",
@@ -134,7 +123,6 @@ const products = [
     numReviews: 22,
   },
   {
-    _id: "12",
     name: "Google Nest Learning Thermostat",
     image: "/images/nest.jpg",
     description: "Smart thermostat that learns your schedule.",
@@ -146,7 +134,6 @@ const products = [
     numReviews: 16,
   },
   {
-    _id: "13",
     name: "Razer BlackWidow V3 Mechanical Keyboard",
     image: "/images/keyboard.jpg",
     description: "RGB mechanical keyboard with tactile feedback.",
@@ -158,7 +145,6 @@ const products = [
     numReviews: 19,
   },
   {
-    _id: "14",
     name: "GoPro HERO11 Action Camera",
     image: "/images/gopro.jpg",
     description: "Capture 5.3K video with advanced stabilization.",
@@ -170,7 +156,6 @@ const products = [
     numReviews: 15,
   },
   {
-    _id: "15",
     name: "Fitbit Charge 5 Fitness Tracker",
     image: "/images/fitbit.jpg",
     description: "Track heart rate, sleep, and workouts.",
@@ -182,7 +167,6 @@ const products = [
     numReviews: 21,
   },
   {
-    _id: "16",
     name: "Anker PowerCore 20000mAh Power Bank",
     image: "/images/powerbank.jpg",
     description: "Fast charging for phones and tablets.",
@@ -194,7 +178,6 @@ const products = [
     numReviews: 33,
   },
   {
-    _id: "17",
     name: "Asus ROG Strix Gaming Laptop",
     image: "/images/asusrog.jpg",
     description: "High-performance gaming with RTX graphics.",
@@ -206,7 +189,6 @@ const products = [
     numReviews: 14,
   },
   {
-    _id: "18",
     name: "JBL Flip 6 Bluetooth Speaker",
     image: "/images/jbl.jpg",
     description: "Portable waterproof speaker with deep bass.",
@@ -218,7 +200,6 @@ const products = [
     numReviews: 26,
   },
   {
-    _id: "19",
     name: "Nintendo Switch OLED Model",
     image: "/images/switch.jpg",
     description: "Upgraded display and battery for handheld gaming.",
@@ -230,7 +211,6 @@ const products = [
     numReviews: 40,
   },
   {
-    _id: "20",
     name: "Sony WH-1000XM5 Wireless Headphones",
     image: "/images/sonyheadphones.jpg",
     description: "Best-in-class noise cancellation and sound.",
@@ -241,11 +221,7 @@ const products = [
     rating: 4.8,
     numReviews: 28,
   },
-
-  // Add 10 more below...
-
   {
-    _id: "21",
     name: "Ring Video Doorbell 4",
     image: "/images/ring.jpg",
     description: "1080p HD video, motion detection, and night vision.",
@@ -257,7 +233,6 @@ const products = [
     numReviews: 13,
   },
   {
-    _id: "22",
     name: "Kindle Paperwhite (11th Gen)",
     image: "/images/kindle.jpg",
     description: "Waterproof e-reader with adjustable warm light.",
@@ -269,7 +244,6 @@ const products = [
     numReviews: 23,
   },
   {
-    _id: "23",
     name: "MSI GeForce RTX 4070 Graphics Card",
     image: "/images/gpu.jpg",
     description: "Next-gen graphics with ray tracing and DLSS.",
@@ -281,7 +255,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "24",
     name: "DJI Mini 3 Pro Drone",
     image: "/images/drone.jpg",
     description: "Lightweight drone with 4K camera and obstacle sensors.",
@@ -293,7 +266,6 @@ const products = [
     numReviews: 11,
   },
   {
-    _id: "25",
     name: "Tile Mate Bluetooth Tracker",
     image: "/images/tile.jpg",
     description: "Easily locate lost keys, bags, or wallets.",
@@ -305,7 +277,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "26",
     name: "Samsung 49-Inch Curved Ultrawide Monitor",
     image: "/images/monitor.jpg",
     description: "Immersive display with QHD resolution.",
@@ -317,7 +288,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: "27",
     name: "Corsair Vengeance 32GB DDR5 RAM",
     image: "/images/ram.jpg",
     description: "High-speed memory for next-gen systems.",
@@ -329,7 +299,6 @@ const products = [
     numReviews: 7,
   },
   {
-    _id: "28",
     name: "Logitech C920 HD Webcam",
     image: "/images/webcam.jpg",
     description: "Full HD 1080p video calling and recording.",
@@ -341,7 +310,6 @@ const products = [
     numReviews: 17,
   },
   {
-    _id: "29",
     name: "TP-Link AX6000 Wi-Fi 6 Router",
     image: "/images/router.jpg",
     description: "Ultra-fast speed and stable connection.",
@@ -353,7 +321,6 @@ const products = [
     numReviews: 20,
   },
   {
-    _id: "30",
     name: "Apple Watch Series 9",
     image: "/images/applewatch.jpg",
     description: "Smart fitness tracker with ECG, blood oxygen, and Siri.",
@@ -365,7 +332,6 @@ const products = [
     numReviews: 24,
   },
   {
-    _id: "31",
     name: "Philips Hue Smart LED Light Starter Kit",
     image: "/images/hue.jpg",
     description:
@@ -378,7 +344,6 @@ const products = [
     numReviews: 14,
   },
   {
-    _id: "32",
     name: "Seagate 2TB Portable External Hard Drive",
     image: "/images/seagate.jpg",
     description: "Easily store and access your files on the go with USB 3.0.",
